@@ -8,7 +8,7 @@ using Math = ProjectEulerCore.Helpers.Math;
 namespace ProjectEulerCSharp
 {
     [Problem(3, "Largest prime factor of 600851475143 ")]
-    public class Solution3
+    public class Solution003
     {
         public object Solve()
         {

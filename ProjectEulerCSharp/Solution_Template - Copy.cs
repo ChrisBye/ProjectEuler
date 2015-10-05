@@ -5,7 +5,7 @@ using System.Linq;
 namespace ProjectEulerCSharp
 {
     [Problem(0, "Description")]
-    public class Solution0
+    public class Solution000
     {
         public object Solve()
         {

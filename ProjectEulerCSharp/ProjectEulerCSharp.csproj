@@ -43,18 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Solution2.cs" />
-    <Compile Include="Solution3.cs" />
-    <Compile Include="Solution4.cs" />
-    <Compile Include="Solution5.cs" />
-    <Compile Include="Solution6.cs" />
-    <Compile Include="Solution7.cs" />
-    <Compile Include="Solution8.cs" />
-    <Compile Include="Solution9.cs" />
+    <Compile Include="1-10\Solution002.cs" />
+    <Compile Include="1-10\Solution003.cs" />
+    <Compile Include="1-10\Solution004.cs" />
+    <Compile Include="1-10\Solution005.cs" />
+    <Compile Include="1-10\Solution006.cs" />
+    <Compile Include="1-10\Solution007.cs" />
+    <Compile Include="1-10\Solution008.cs" />
+    <Compile Include="1-10\Solution009.cs" />
+    <Compile Include="1-10\Solution010.cs" />
+    <Compile Include="Solution012.cs" />
+    <Compile Include="Solution014.cs" />
     <Compile Include="Solution_Template - Copy.cs" />
-    <Compile Include="Solution_Template.cs" />
+    <Compile Include="Solution015.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Solution1.cs" />
+    <Compile Include="1-10\Solution001.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectEulerCore\ProjectEulerCore.csproj">

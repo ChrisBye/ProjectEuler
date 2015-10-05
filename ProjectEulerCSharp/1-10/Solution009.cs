@@ -6,7 +6,7 @@ using System.Linq;
 namespace ProjectEulerCSharp
 {
     [Problem(9, "There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.")]
-    public class Solution9
+    public class Solution009
     {
         public object Solve()
         {

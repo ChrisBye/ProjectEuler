@@ -5,7 +5,7 @@ using ProjectEulerCore.Infrastructure;
 namespace ProjectEulerCSharp
 {
     [Problem(2, "Even Fibonacci numbers")]
-    public class Solution2
+    public class Solution002
     {
         public object Solve()
         {

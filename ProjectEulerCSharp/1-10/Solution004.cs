@@ -6,7 +6,7 @@ using ProjectEulerCore.Infrastructure;
 namespace ProjectEulerCSharp
 {
     [Problem(4, "Find the largest palindrome made from the product of two 3-digit numbers.")]
-    public class Solution4
+    public class Solution004
     {
         public object Solve()
         {

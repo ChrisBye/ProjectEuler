@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 
 namespace ProjectEulerCSharp
 {
@@ -66,18 +67,25 @@ namespace ProjectEulerCSharp
             }
         }
 
-        public static IEnumerable<int> InfiniteInt
+        public static IEnumerable<int> InfiniteInt()
         {
-            get
+            int value = 0;
+            while (true)
             {
-                int value = 0;
-                while (true)
-                {
-                    yield return value++;
-                }
+                yield return value++;
             }
+            
         }
 
+        public static IEnumerable<long> InfiniteLong()
+        {
+            int value = 0;
+            while (true)
+            {
+                yield return value++;
+            }
+
+        }
         /// http://en.wikipedia.org/wiki/Arithmetic_progression#Sum
         public static int Arithmetic(int firstTerm, int increment, int termCount)
         {
@@ -86,5 +94,30 @@ namespace ProjectEulerCSharp
             return (int)sum;
         }
 
+        public static IEnumerable<long> Triangle()
+        {
+            var ints = InfiniteLong();
+            var triangle = 0L;
+            foreach (var i in ints)
+            {
+                triangle += i;
+                yield return triangle;
+            }
+        }
+
+        public static IEnumerable<long> Collatz(long start)
+        {
+            var value = start;
+            yield return value;
+            while (value != 1L)
+            {
+                if (value%2 == 0L)
+                    value = value/2;
+                else
+                    value = 3*value + 1;
+                yield return value;
+            }
+
+        }
     }
-}
+} 

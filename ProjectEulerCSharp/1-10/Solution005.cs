@@ -9,7 +9,7 @@ using Math = System.Math;
 namespace ProjectEulerCSharp
 {
     [Problem(5, "What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?")]
-    public class Solution5
+    public class Solution005
     {
         public object Solve()
         {

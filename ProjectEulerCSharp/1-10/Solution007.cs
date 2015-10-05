@@ -4,12 +4,12 @@ using System.Linq;
 
 namespace ProjectEulerCSharp
 {
-    [Problem(10, "Find the sum of all the primes below two million.")]
-    public class Solution10
+    [Problem(7, "What is the 10 001st prime number?")]
+    public class Solution007
     {
         public object Solve()
         {
-            var solution = Sequences.Primes().TakeWhile(i => i < 2000000).Sum();
+            var solution = Sequences.Primes().ElementAt(10000);
             return solution;
         }
     }
