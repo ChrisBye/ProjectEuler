@@ -42,3 +42,6 @@ _ReSharper*/
 
 # Office Temp Files
 ~$*
+
+#recovery key
+.recoverykey
