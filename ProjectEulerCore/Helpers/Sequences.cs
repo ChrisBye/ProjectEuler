@@ -6,9 +6,13 @@ namespace ProjectEulerCSharp
     public class Sequences
     {
         #region primes
+        /// <summary>
+        /// https://handcraftsman.wordpress.com/2010/09/02/ienumerable-of-prime-numbers-in-csharp/
+        /// </summary>
+        /// <returns></returns>
         public static IEnumerable<long> Primes()
         {
-            yield return 2;
+            yield return 2; //not really sure why it was not including 2, but now it is.
             var memoized = new List<long>();
             long sqrt = 1;
             var primes = PotentialPrimes().Where(x =>
