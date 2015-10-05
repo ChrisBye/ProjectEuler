@@ -7,7 +7,8 @@ namespace ProjectEulerCSharp
     {
         public object Solve()
         {
-            return "Not Solved";
+            var solution = "Not Solved";
+            return solution;
         }
     }
 }

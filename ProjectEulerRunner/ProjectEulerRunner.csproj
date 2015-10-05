@@ -62,10 +62,6 @@
       <Project>{48F63D14-75A3-40BC-A3D6-F8894BFB6E38}</Project>
       <Name>ProjectEulerCSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectEulerFSharp\ProjectEulerFSharp.fsproj">
-      <Project>{2AB1F603-55F5-4CE5-B45E-7C62875B7E93}</Project>
-      <Name>ProjectEulerFSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

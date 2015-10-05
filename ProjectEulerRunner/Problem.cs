@@ -46,13 +46,13 @@ namespace ProjectEulerRunner
         public static IEnumerable<Problem> GetAll()
         {
             var csharpAssembly = Assembly.Load("ProjectEulerCSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
-            var fsharpAssembly = Assembly.Load("ProjectEulerFSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
+            //var fsharpAssembly = Assembly.Load("ProjectEulerFSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 
             var csharpClasses = SolutionsClass.Scan(csharpAssembly);
-            var fsharpClasses = SolutionsClass.Scan(fsharpAssembly);
+            //var fsharpClasses = SolutionsClass.Scan(fsharpAssembly);
 
             var problemRunners =
-                csharpClasses.Concat(fsharpClasses)
+                csharpClasses
                     .GroupBy(c => c.Id).Select(classes => new Problem(
                         id: classes.Key,
                         description: classes.First().Description,
