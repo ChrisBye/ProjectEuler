@@ -12,9 +12,7 @@ namespace ProjectEulerCSharp
         public object Solve()
         {
             var ds = Sequences.InfiniteInt().Take(10000).ToDictionary(i => i, d);
-            var amicables= Sequences.InfiniteInt().Take(10000).Where(i => Predicate(ds, i));
-            var repeats = amicables.Where(i => ds[i] == i);
-            return amicables.Sum() ;// + repeats.Sum();
+            return Sequences.InfiniteInt().Take(10000).Where(i => Predicate(ds, i)).Sum();
         }
 
         private static  bool Predicate(Dictionary<int, int> ds, int a)
@@ -25,9 +23,7 @@ namespace ProjectEulerCSharp
             if (!ds.ContainsKey(d_a))
                 return false;
             var d_d_a = ds[d_a];
-            if (d_a == a)
-                return false;
-            if (d_d_a == a )
+            if (d_a != a && d_d_a == a)
                 return true;
             return false;
 
