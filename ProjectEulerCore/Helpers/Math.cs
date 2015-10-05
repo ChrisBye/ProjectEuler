@@ -49,6 +49,12 @@ namespace ProjectEulerCore.Helpers
             }
             return factors;
         }
+        public static HashSet<long> ProperDivisors(this long number)
+        {
+            var factors = Divisors(number);
+            factors.Remove(number);
+            return factors;
+        }
 
         static int SparseBitcount(int n)
         {

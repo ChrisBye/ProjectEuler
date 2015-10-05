@@ -55,8 +55,9 @@
     <Compile Include="1-10\Solution010.cs" />
     <Compile Include="Solution012.cs" />
     <Compile Include="Solution014.cs" />
-    <Compile Include="Solution_Template - Copy - Copy.cs" />
-    <Compile Include="Solution_Template - Copy.cs" />
+    <Compile Include="Solution017.cs" />
+    <Compile Include="Solution_Template.cs" />
+    <Compile Include="Solution016.cs" />
     <Compile Include="Solution015.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="1-10\Solution001.cs" />
