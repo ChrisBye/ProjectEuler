@@ -31,9 +31,30 @@ namespace ProjectEulerCore.Helpers
             return isPalindrome;
         }
 
-        //private static bool IsPalindrome(this struct val)
-        //{
-            
-        //}
+        public static IEnumerable<IEnumerable<object>> Windows(this IEnumerable<object> sourceIE, int size)
+        {
+            var source = sourceIE as object[] ?? sourceIE.ToArray();
+            var start = source.Take(size);
+            yield return start;
+            var index = size - 1;
+            while (index < source.Count())
+            {
+                yield return source.Skip(index - size).Take(size);
+            }
+        }
+
+        public static IEnumerable<IEnumerable<int>> Windows(this IEnumerable<int> sourceIE, int size)
+        {
+            var source = sourceIE.ToArray();
+            var start = source.Take(size);
+            yield return start;
+            var index = size - 1;
+            while (index < source.Count())
+            {
+                var enumerable = source.Skip(index - size).Take(size);
+                index++;
+                yield return enumerable;
+            }
+        } 
     }
 }
