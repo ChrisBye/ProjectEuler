@@ -55,6 +55,6 @@ namespace ProjectEulerCore.Helpers
                 index++;
                 yield return enumerable;
             }
-        } 
+        }
     }
 }
