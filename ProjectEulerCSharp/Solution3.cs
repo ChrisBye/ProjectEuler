@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ProjectEulerCore.Helpers;
 using ProjectEulerCore.Infrastructure;
+using Math = ProjectEulerCore.Helpers.Math;
 
 namespace ProjectEulerCSharp
 {
@@ -11,34 +12,11 @@ namespace ProjectEulerCSharp
     {
         public object Solve()
         {
+            long target = 600851475143; 
+            var factors = Math.PrimeFactorize(target);
+            return factors.Last();
 
-            var primes = Sequences.Primes().GetEnumerator();
-
-            var factors = new List<long>();
-            var target = 600851475143;
-            while (primes.MoveNext())
-            {
-                var candidate = primes.Current;
-                if (candidate > target/2)
-                {
-                    factors.Add(target);
-                    return factors.Last();
-                }
-                var remainder = target%candidate;
-                var quotient = target/candidate;
-                while (remainder == 0)
-                {
-                    target = quotient;
-                    factors.Add(candidate);
-                    remainder = target % candidate;
-                    quotient = target / candidate;
-                }
-            }
-
-            return null;
         }
-
-        
     }
 }
 

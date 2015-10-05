@@ -8,6 +8,7 @@ namespace ProjectEulerCSharp
         #region primes
         public static IEnumerable<long> Primes()
         {
+            yield return 2;
             var memoized = new List<long>();
             long sqrt = 1;
             var primes = PotentialPrimes().Where(x =>

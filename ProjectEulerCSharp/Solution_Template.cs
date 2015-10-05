@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ProjectEulerCore.Infrastructure;
+using System.Linq;
 
 namespace ProjectEulerCSharp
 {

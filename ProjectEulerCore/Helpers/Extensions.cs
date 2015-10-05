@@ -19,6 +19,10 @@ namespace ProjectEulerCore.Helpers
         {
             return factors.Aggregate(1L, (current, factor) => current * factor);
         }
+        public static double Product(this IEnumerable<double> factors)
+        {
+            return factors.Aggregate(1.0, (current, factor) => current * factor);
+        }
         public static bool IsPalindrome(this object val)
         {
             var str = val.ToString();

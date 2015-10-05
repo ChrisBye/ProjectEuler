@@ -23,7 +23,8 @@ namespace ProjectEulerRunner
                     solution.Language, solution.MethodName, solution.DurationMs, solution.Result);
             }
 
-            Console.Read();
+
+            //Console.Read();
         }
     }
 }
