@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,7 @@
     <Compile Include="1-10\Solution010.cs" />
     <Compile Include="Solution012.cs" />
     <Compile Include="Solution014.cs" />
+    <Compile Include="Solution_Template - Copy - Copy.cs" />
     <Compile Include="Solution_Template - Copy.cs" />
     <Compile Include="Solution015.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
