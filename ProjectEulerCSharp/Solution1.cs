@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using MoreLinq;
-using ProjectEulerCore.Helpers;
 using ProjectEulerCore.Infrastructure;
 
 namespace ProjectEulerCSharp

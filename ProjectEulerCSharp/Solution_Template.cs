@@ -1,4 +1,5 @@
-﻿using ProjectEulerCore.Infrastructure;
+﻿using System.Collections.Generic;
+using ProjectEulerCore.Infrastructure;
 
 namespace ProjectEulerCSharp
 {
