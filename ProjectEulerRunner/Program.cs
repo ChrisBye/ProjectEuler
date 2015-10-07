@@ -10,7 +10,7 @@ namespace ProjectEulerRunner
             Console.ForegroundColor = ConsoleColor.Green;
 
             //var problem = Problem.GetLatest();
-            var problem = Problem.GetId(13);
+            var problem = Problem.GetId(17);
 
             var line = Environment.NewLine;
             var desc = Regex.Replace(problem.Description, line + @"\s+", line);
