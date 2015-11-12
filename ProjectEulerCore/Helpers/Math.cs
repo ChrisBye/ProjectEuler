@@ -92,5 +92,16 @@ namespace ProjectEulerCore.Helpers
             }
             return r;
         }
+        public static long Factorial(this long i)
+        {
+            if (i <= 1)
+                return 1;
+            return i * Factorial(i - 1);
+        }
+        public static double P(int n, int k)
+        {
+            var factorial = Math.Factorial(n) / Math.Factorial(n - k);
+            return factorial;
+        }
     }
 }
