@@ -22,8 +22,10 @@ namespace ProjectEulerCSharp
             var words = raw.Split(',').Select(w => w.Trim('"'));
             return words;
         }
-        private static int AlphaValue(this string s)
-        {
+
+        private static int AlphaValue(string s)
+        { 
+        
             //A=65
             return s.Select(c => c - 'A' + 1).Sum();
         }

@@ -60,6 +60,7 @@
     <Compile Include="11-20\Solution017.cs" />
     <Compile Include="11-20\Solution018_u.cs" />
     <Compile Include="Solution020.cs" />
+    <Compile Include="Solution024.cs" />
     <Compile Include="Solution022.cs" />
     <Compile Include="Solution_Template.cs" />
     <Compile Include="11-20\Solution013.cs" />
